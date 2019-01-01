@@ -17,5 +17,5 @@ class DatascienceSpider(scrapy.Spider):
         ads['recruiter'] = response.xpath('//span[@data-automation="advertiser-name"]//text()').extract_first()
         ads['job_date'] =  response.xpath('//dd[@data-automation="job-detail-date"]//text()').extract_first()
         ads['work_type'] = response.xpath('//dd[@data-automation="job-detail-work-type"]//text()').extract_first()
-        ads['job_desc'] = response.xpath('//div[@data-automation="mobileTemplate"]//div//text()|ul//text()').extract_first()
+        ads['job_desc'] = response.xpath('//div[@data-automation="mobileTemplate"]//text()|ul//text()').extract()
         yield ads
