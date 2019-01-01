@@ -2,8 +2,8 @@
 import scrapy
 
 
-class DatascienceSpider(scrapy.Spider):
-    name = 'datascience'
+class SeekSpider(scrapy.Spider):
+    name = 'seek'
     start_urls = ['https://www.seek.com.au/data-scientist-jobs/in-All-Melbourne-VIC']
 
     def parse(self, response):
