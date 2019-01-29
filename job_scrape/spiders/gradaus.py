@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-
 class GradausSpider(scrapy.Spider):
     name = 'gradaus'
     start_urls = ['https://gradaustralia.com.au/search-jobs/region/victoria/']
